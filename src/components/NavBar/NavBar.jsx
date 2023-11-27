@@ -1,6 +1,7 @@
+import { FaCartShopping } from 'react-icons/fa6';
+import { Link } from "react-router-dom";
 
-
-function Navbar() {
+export const NavBar = () => {
     return (
       <>
         <nav className="navbar navbar-expand-lg">
@@ -40,11 +41,21 @@ function Navbar() {
             </button>
             <div className="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
               <div className="navbar-nav">
-                <a className="nav-link px-3" href="">Beer</a>
-                <a className="nav-link px-3" href="">Wine</a>
-                <a className="nav-link px-3" href="">Vodka</a>
-                <a className="nav-link px-3" href="">Whiskey</a>
-                <a className="nav-link px-3" href="">Cart 1</a>
+                <Link to="/category/beer">
+                  <button className="nav-link px-3" href="">Beer</button>
+                </Link>
+                <Link to="/category/wine">
+                  <button className="nav-link px-3" href="">Wine</button>
+                </Link>
+                <Link to="/category/vodka">
+                  <button className="nav-link px-3" href="">Vodka</button>
+                </Link>
+                <Link to="/category/whiskey">
+                  <button className="nav-link px-3" href="">Whiskey</button>
+                </Link>
+                <Link to="/cart">
+                  <button className="nav-link px-3" href=""><FaCartShopping/>1</button>
+                </Link>
               </div>
             </div>
           </div>
@@ -53,5 +64,5 @@ function Navbar() {
     );
   }
   
-  export default Navbar;
+
   
