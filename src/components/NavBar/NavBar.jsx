@@ -6,7 +6,8 @@ export const NavBar = () => {
       <>
         <nav className="navbar navbar-expand-lg">
           <div className="container-fluid">
-            <a className="navbar-brand" href="#">
+            <Link to ="/">
+            <button className="navbar-brand" href="">
               <img
                 src=""
                 alt="ChinChinLogo"
@@ -14,7 +15,8 @@ export const NavBar = () => {
                 height="35px"
               />
               ChinChin
-            </a>
+            </button>
+            </Link>
             <button
               className="navbar-toggler"
               type="button"
